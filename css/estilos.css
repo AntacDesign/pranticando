@@ -1,9 +1,19 @@
+*
+{
+    margin: 0;
+}
+ul
+{
+    list-style: none;
+    padding:0;
+}
 body
 {
     margin: 0;
     background: #08b783;
     color: white;
     padding: 0;
+    font-size: 20px;
 }
 
 h1,h2,h3,h4,h5,h6
@@ -12,4 +22,90 @@ h1,h2,h3,h4,h5,h6
     margin: inherit;
     font-family: 'RomanD';
 }
+
+.container
+{
+    display: grid;
+    grid-template: 100vh /6.7em 1fr 1fr ;
+}
+
+.item
+{
+    border: 1px solid red;
+}
+
+/* header */
+
+.header
+{
+    text-align: center;
+    display: grid;
+    grid-template: 8em 1fr 8em / auto;
+    justify-content: space-between;
+    justify-self: center;
+}
+
+/* pefil */
+.nom-perfil, .usu-perfil
+{
+    font-size: .75em;
+    margin: .2em;
+}
+
+.perfil-h
+{
+    /* border: 1px solid  red; */
+    align-self: flex-end;
+}
+
+/* foto de perfil */
+.perfil-h img
+{
+    width: 3em;
+    border-radius: .3em;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    margin-bottom: .15em;
+}
+
+/* barra de navegacion */
+
+.barra-h
+{
+    display: grid;
+    /* grid-template-rows: 5em 1fr 1fr 1fr 1fr; */
+    align-items: center;
+    grid-gap: 2em;
+}
+/* tamaños de iconos de barra*/
+.b-icon
+{
+    width: 1.2em;
+}
+
+.i-bh:nth-of-type(1)
+{
+    padding-top: 5em;
+}
+
+/* boton de la barra */
+.b-salir-h
+{
+    background: transparent;
+    border-style: none;
+    align-self: flex-end;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+/* imagen de boton */
+.b-salir
+{
+    width: 1.8em;
+    padding-bottom: 3.4em;
+}
+
+/* final de barra */
+
 
