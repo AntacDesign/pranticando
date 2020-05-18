@@ -1,11 +1,7 @@
 *
 {
     margin: 0;
-}
-ul
-{
-    list-style: none;
-    padding:0;
+    font-family: 'Comfortaa', cursive;
 }
 body
 {
@@ -20,21 +16,32 @@ h1,h2,h3,h4,h5,h6
 {
     padding: 0;
     margin: inherit;
-    font-family: 'RomanD';
+}
+
+ul
+{
+    list-style: none;
+    padding:0;
+}
+
+button
+{
+    outline: none;
+    cursor: pointer;
 }
 
 .container
 {
     display: grid;
-    grid-template: 100vh /6.7em 1fr 1fr ;
+    grid-template: 100vh /6.7em minmax(800px,1200px) 1fr ;
 }
 
 .item
 {
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
-/* header */
+/* header-barra */
 
 .header
 {
@@ -50,6 +57,15 @@ h1,h2,h3,h4,h5,h6
 {
     font-size: .75em;
     margin: .2em;
+}
+.nom-perfil
+{
+    font-weight: 500;
+}
+.usu-perfil
+{
+    font-weight: 300;
+    color: rgba(245, 245, 245, 0.657);
 }
 
 .perfil-h
@@ -95,8 +111,6 @@ h1,h2,h3,h4,h5,h6
     align-self: flex-end;
     margin: 0;
     padding: 0;
-    outline: none;
-    cursor: pointer;
 }
 
 /* imagen de boton */
@@ -106,6 +120,217 @@ h1,h2,h3,h4,h5,h6
     padding-bottom: 3.4em;
 }
 
-/* final de barra */
+/* final de header-barra */
 
+.container-main
+{
+    background: white;
+    display: grid;
+    grid-template-rows: auto 1fr 1fr;
+    border-top-left-radius: 1.4em;
+    border-bottom-left-radius: 1.4em;
+    padding: 2em 1.4em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+}
+
+/*  inicio barra  */
+.barra
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 2.5em;
+    /* border: 1px solid red; */
+}
+
+.bar-busqueda
+{
+    display: flex;
+}
+
+/* botones barra */
+.b-barra
+{
+    background: transparent;
+    border: none;
+    width: 2.5em;
+}
+
+.b-buscar
+{
+    background: transparent;
+    border: none;
+    width: 2.2em;
+}
+
+.input-buscar
+{
+    background: transparent;
+    border: 1px solid white;
+    font-size: .8em;
+    outline:none;
+    width: 500px;
+}
+
+/* envento input */
+.input-buscar:focus
+{
+    border-bottom: 1px solid rgba(28, 255, 168, 0.698);
+}
+
+.b-notificaciones
+{
+    width: 2.5em;
+    background: transparent;
+    border: none;
+    display: inline-block;
+    position: relative;
+}
+
+.b-notificaciones img
+ {
+     background: #fed973;
+     border-radius: .4em;
+     padding: .6em;
+ }
+
+ .b-notificaciones::after
+ {
+     content: "";
+     display: block;
+     background: rgb(255, 111, 111);
+     border-radius: 50%;
+     border: 2.5px solid white;
+     position: absolute;
+     top:-.3em;
+     right: -1.2em;
+     width: .7em;
+     height: .7em;
+ }
+
+/*  fin barra */
+
+/* hero */
+.hero
+{
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: 14em minmax(14.6em,auto) 8em;
+    align-self: start;
+    align-items: center;
+    /* justify-items: center; */
+}
+
+/* imangen */
+.señor-ho img
+{
+    width: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+/* titulo y boton */
+.h1-hero
+{
+    color: #4c3b97;
+    font-size: xx-large;
+    position: relative;
+    z-index: 1;
+    padding-bottom: .4em;
+}
+
+.p-hero
+{
+    color: #bec0cf;
+    font-size: .8em;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 2em;
+}
+
+.b-account
+{
+    background: #503e9d;
+    border-radius: .5em;
+    color: #f2eaff;
+    padding: .6em;
+    border: none;
+    width: 9em;
+    font-weight: 700;
+}
+
+/* GRAFICO CIRCULAR DEL MAIN */ 
+.grafico-ho
+{
+    background: white;
+   /*  transform: rotate(45deg); */
+    width: 7em;
+    height: 7em;
+    /* border: 1px solid red; */
+    border-radius: 50%;
+    justify-self: center;
+    align-self: center;
+    position: relative;
+    
+}
+
+.grafico-ho::after
+{
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    border: 1em solid #ffdb68 ;
+    transform: rotate(40deg);
+    clip-path: polygon(49% 52%, 0% 100%, 100% 100%);
+    width: 5em;
+    height: 5em;
+}
+
+.grafico-ho::before
+{
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    transform: rotate(49.5deg);
+    border: 1em solid rgb(255, 111, 111);
+    clip-path: polygon(49% 52%, 0% 100%, 15% 100%);
+    width: 5em;
+    height: 5em;
+}
+
+.pize-ho
+{
+    position: absolute;
+    border-radius: 50%;
+    transform: rotate(140deg);
+    border: 1em solid #e2e6f5;
+    clip-path: polygon(49% 52%, 0% 100%, 104% 100%);
+    width: 5em;
+    height: 5em;
+}
+
+
+.pize-ho2
+{
+    position: absolute;
+    border-radius: 50%;
+    transform: rotate(268.5deg);
+    border: 1em solid #7d5896;
+    clip-path: polygon(49% 52%, 0% 100%, 900% 100%);
+    width: 5em;
+    height: 5em;
+}
+
+.pize-ho3
+{
+    position: absolute;
+    border-radius: 50%;
+    transform: rotate(-49deg);
+    border: 1em solid #13b7fd ;
+    clip-path: polygon(49% 52%, 0% 100%, 50% 100%);
+    width: 5em;
+    height: 5em;
+}
 
