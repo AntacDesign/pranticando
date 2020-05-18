@@ -33,7 +33,7 @@ button
 .container
 {
     display: grid;
-    grid-template: 100vh /6.7em minmax(800px,1200px) 1fr ;
+    grid-template: 100vh /6.7em minmax(800px,1300px) 1fr ;
 }
 
 .item
@@ -126,7 +126,7 @@ button
 {
     background: white;
     display: grid;
-    grid-template-rows: auto 1fr 1fr;
+    grid-template-rows: repeat(3,auto);
     border-top-left-radius: 1.4em;
     border-bottom-left-radius: 1.4em;
     padding: 2em 1.4em;
@@ -210,12 +210,12 @@ button
 
 /*  fin barra */
 
-/* hero */
+/* HERO */
 .hero
 {
     /* border: 1px solid red; */
     display: grid;
-    grid-template-columns: 14em minmax(14.6em,auto) 8em;
+    grid-template-columns: minmax(14em,20em) minmax(14.6em,auto) 8em;
     align-self: start;
     align-items: center;
     /* justify-items: center; */
@@ -334,3 +334,196 @@ button
     height: 5em;
 }
 
+/* FIN HERO */
+
+/* BALANCE */
+
+.balance
+{
+    color:#32335a;
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: 1fr 15em;
+    grid-gap: 1.5em;
+}
+
+.i-b
+{
+    /* border: 1px solid red; */
+}
+
+.titulo-grafica
+{
+    display: grid;
+    grid-template-rows: 3em 2em minmax(11em,auto);
+    padding-left: 1.5em;
+}
+
+.titulo-balance
+{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* boton wallet */
+.b-wallet
+{
+    background: transparent;
+    border: none;
+    border-radius: 50%;
+    background: #def6ed;
+    padding: 1em;
+}
+
+.img-wallet
+{
+    width: 1.8em;
+}
+
+/* poniendo moneda */
+.moneda
+{
+    font-weight: 700;
+}
+.moneda::before
+{
+    content: "$ ";
+}
+
+/* botones de  day, week y month */
+
+.b-day
+{
+    color: white;
+    background: #4c3b97;
+    padding: .3em;
+    width: 5em;
+    border: none;
+    border-radius: .3em;
+    margin-right: .5em;
+}
+
+.b-week,.b-month
+{
+    color: #b1b3be;
+    padding: .3em;
+    width: 5em;
+    border: none;
+    border-radius: .3em;
+    margin-right: .5em;
+}
+
+/* GRAFICA DE BARRAS */
+.barras-dias
+{
+    display: grid;
+    grid-template-columns: repeat(7,auto);
+    /* border: 1px solid red; */
+    align-items: flex-end;
+    justify-items: center;
+    height: 90%;
+}
+
+.barras-dias p
+{
+    font-size: small;
+    position: relative;
+}
+
+.mon::before
+{
+    content: "";
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    bottom:1em;
+    background: linear-gradient(#fdd974 10%,#fdd974 10%,#7d5895 10%,#7d5895 30%,#ee6370 30%,#ee6370 50%,#13b7ff 50% ,#13b7ff 100% );
+    width: .5em;
+    height: 13em;
+}
+
+.tue::before
+{
+    content: "";
+    display: block;
+    margin: 0 auto;
+    background: linear-gradient(#fdd974 10%,#fdd974 10%,#7d5895 10%,#7d5895 30%,#ee6370 30%,#ee6370 50%,#13b7ff 50% ,#13b7ff 100% );
+    width: .5em;
+    height: 11em;
+    position: relative;
+    bottom:1em;
+}
+
+.wed::before
+{
+    content: "";
+    display: block;
+    margin: 0 auto;
+    background: linear-gradient(#fdd974 10%,#fdd974 10%,#7d5895 10%,#7d5895 30%,#ee6370 30%,#ee6370 50%,#13b7ff 50% ,#13b7ff 100% );
+    width: .5em;
+    height: 9em;
+    position: relative;
+    bottom:1em;
+}
+
+.thu::before
+{
+    content: "";
+    display: block;
+    margin: 0 auto;
+    background: linear-gradient(#fdd974 10%,#fdd974 10%,#7d5895 10%,#7d5895 30%,#ee6370 30%,#ee6370 50%,#13b7ff 50% ,#13b7ff 100% );
+    width: .5em;
+    height: 10em;
+    position: relative;
+    bottom:1em;
+}
+
+.fri::before
+{
+    content: "";
+    display: block;
+    margin: 0 auto;
+    background: linear-gradient(#fdd974 10%,#fdd974 10%,#7d5895 10%,#7d5895 30%,#ee6370 30%,#ee6370 50%,#13b7ff 50% ,#13b7ff 100% );
+    width: .5em;
+    height: 13em;
+    position: relative;
+    bottom:1em;
+}
+.sat::before
+{
+    content: "";
+    display: block;
+    margin: 0 auto;
+    background: linear-gradient(#fdd974 10%,#fdd974 10%,#7d5895 10%,#7d5895 30%,#ee6370 30%,#ee6370 50%,#13b7ff 50% ,#13b7ff 100% );
+    width: .5em;
+    height: 11em;
+    position: relative;
+    bottom:1em;
+}
+.sun::before
+{
+    content: "";
+    display: block;
+    margin: 0 auto;
+    background: linear-gradient(#fdd974 10%,#fdd974 10%,#7d5895 10%,#7d5895 30%,#ee6370 30%,#ee6370 50%,#13b7ff 50% ,#13b7ff 100% );
+    width: .5em;
+    height: 12em;
+    position: relative;
+    bottom:1em;
+}
+
+/* CREDIT */
+.credit
+{
+    background: #fed772;
+    color: white;
+    border-radius: 1em;
+    padding: 1em;
+    
+}
+.img-person-c
+{
+    width: 10em;
+    padding-top: 1.5em;
+}
