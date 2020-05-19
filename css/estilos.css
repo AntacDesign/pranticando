@@ -33,7 +33,7 @@ button
 .container
 {
     display: grid;
-    grid-template: minmax(100vh,900px) /6.7em minmax(870px,auto) 17em ;
+    grid-template: minmax(100vh,900px) /6.7em minmax(870px,auto) auto ;
 }
 
 .item
@@ -153,6 +153,10 @@ button
 {
     background: transparent;
     border: none;
+}
+
+.nav-burger
+{
     width: 2.5em;
 }
 
@@ -166,9 +170,11 @@ button
 .input-buscar
 {
     background: transparent;
-    border: 1px solid white;
+    /* border: 1px solid white; */
+    border: none;
     font-size: .8em;
     outline:none;
+    border-style: none;
     width: 500px;
 }
 
@@ -180,18 +186,18 @@ button
 
 .b-notificaciones
 {
-    width: 2.5em;
     background: transparent;
     border: none;
     display: inline-block;
     position: relative;
+    background: #fed973;
+    border-radius: .4em;
+    padding: .6em;
 }
 
 .b-notificaciones img
- {
-     background: #fed973;
-     border-radius: .4em;
-     padding: .6em;
+{
+    width: 1.7em;
  }
 
  .b-notificaciones::after
@@ -203,7 +209,7 @@ button
      border: 2.5px solid white;
      position: absolute;
      top:-.3em;
-     right: -1.2em;
+     right: -.3em;
      width: .7em;
      height: .7em;
  }
@@ -576,6 +582,8 @@ button
     display: block;
     width: 5em;
     color: #f5ebff;
+    min-width: 10.9em;
+    max-width: 17em;
     width: auto;
     padding: 1.5em;
     border-radius: 1em;
@@ -703,4 +711,12 @@ ol li
     display: flex;
     justify-content: center;
     margin-top: 1.5em;
+}
+
+@media screen and (min-width:1024px)
+{
+    .container
+    {
+        grid-template: minmax(100vh,900px) /6.7em minmax(870px,auto) 17em ;
+    }
 }
