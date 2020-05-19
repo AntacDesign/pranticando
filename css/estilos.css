@@ -18,7 +18,7 @@ h1,h2,h3,h4,h5,h6
     margin: inherit;
 }
 
-ul
+ul,ol
 {
     list-style: none;
     padding:0;
@@ -33,7 +33,7 @@ button
 .container
 {
     display: grid;
-    grid-template: 100vh /6.7em minmax(800px,1300px) 1fr ;
+    grid-template: minmax(100vh,900px) /6.7em minmax(870px,auto) 17em ;
 }
 
 .item
@@ -126,7 +126,7 @@ button
 {
     background: white;
     display: grid;
-    grid-template-rows: repeat(3,auto);
+    grid-template-rows: 2em minmax(10em,17em) auto;
     border-top-left-radius: 1.4em;
     border-bottom-left-radius: 1.4em;
     padding: 2em 1.4em;
@@ -215,7 +215,8 @@ button
 {
     /* border: 1px solid red; */
     display: grid;
-    grid-template-columns: minmax(14em,20em) minmax(14.6em,auto) 8em;
+    grid-template-columns: 10em minmax(14.6em,auto) 8em;
+    grid-gap: 4em;
     align-self: start;
     align-items: center;
     /* justify-items: center; */
@@ -225,6 +226,7 @@ button
 .señor-ho img
 {
     width: 100%;
+    padding-left: 2.5em;
     position: relative;
     z-index: 0;
 }
@@ -253,9 +255,9 @@ button
     background: #503e9d;
     border-radius: .5em;
     color: #f2eaff;
-    padding: .6em;
+    padding: .75em;
     border: none;
-    width: 9em;
+    width: 10em;
     font-weight: 700;
 }
 
@@ -341,7 +343,7 @@ button
 .balance
 {
     color:#32335a;
-    border: 1px solid red;
+/*     border: 1px solid red; */
     display: grid;
     grid-template-columns: 1fr 15em;
     grid-gap: 1.5em;
@@ -439,8 +441,11 @@ button
     position: relative;
     bottom:1em;
     background: linear-gradient(#fdd974 10%,#fdd974 10%,#7d5895 10%,#7d5895 30%,#ee6370 30%,#ee6370 50%,#13b7ff 50% ,#13b7ff 100% );
-    width: .5em;
+    width: .7em;
     height: 13em;
+    border-bottom-left-radius: .2em;
+    border-bottom-right-radius: .2em;
+
 }
 
 .tue::before
@@ -449,10 +454,12 @@ button
     display: block;
     margin: 0 auto;
     background: linear-gradient(#fdd974 10%,#fdd974 10%,#7d5895 10%,#7d5895 30%,#ee6370 30%,#ee6370 50%,#13b7ff 50% ,#13b7ff 100% );
-    width: .5em;
+    width: .7em;
     height: 11em;
     position: relative;
     bottom:1em;
+    border-bottom-left-radius: .2em;
+    border-bottom-right-radius: .2em;
 }
 
 .wed::before
@@ -461,10 +468,12 @@ button
     display: block;
     margin: 0 auto;
     background: linear-gradient(#fdd974 10%,#fdd974 10%,#7d5895 10%,#7d5895 30%,#ee6370 30%,#ee6370 50%,#13b7ff 50% ,#13b7ff 100% );
-    width: .5em;
+    width: .7em;
     height: 9em;
     position: relative;
     bottom:1em;
+    border-bottom-left-radius: .2em;
+    border-bottom-right-radius: .2em;
 }
 
 .thu::before
@@ -473,10 +482,12 @@ button
     display: block;
     margin: 0 auto;
     background: linear-gradient(#fdd974 10%,#fdd974 10%,#7d5895 10%,#7d5895 30%,#ee6370 30%,#ee6370 50%,#13b7ff 50% ,#13b7ff 100% );
-    width: .5em;
+    width: .7em;
     height: 10em;
     position: relative;
     bottom:1em;
+    border-bottom-left-radius: .2em;
+    border-bottom-right-radius: .2em;
 }
 
 .fri::before
@@ -485,10 +496,12 @@ button
     display: block;
     margin: 0 auto;
     background: linear-gradient(#fdd974 10%,#fdd974 10%,#7d5895 10%,#7d5895 30%,#ee6370 30%,#ee6370 50%,#13b7ff 50% ,#13b7ff 100% );
-    width: .5em;
+    width: .7em;
     height: 13em;
     position: relative;
     bottom:1em;
+    border-bottom-left-radius: .2em;
+    border-bottom-right-radius: .2em;
 }
 .sat::before
 {
@@ -496,10 +509,12 @@ button
     display: block;
     margin: 0 auto;
     background: linear-gradient(#fdd974 10%,#fdd974 10%,#7d5895 10%,#7d5895 30%,#ee6370 30%,#ee6370 50%,#13b7ff 50% ,#13b7ff 100% );
-    width: .5em;
+    width: .7em;
     height: 11em;
     position: relative;
     bottom:1em;
+    border-bottom-left-radius: .2em;
+    border-bottom-right-radius: .2em;
 }
 .sun::before
 {
@@ -507,10 +522,12 @@ button
     display: block;
     margin: 0 auto;
     background: linear-gradient(#fdd974 10%,#fdd974 10%,#7d5895 10%,#7d5895 30%,#ee6370 30%,#ee6370 50%,#13b7ff 50% ,#13b7ff 100% );
-    width: .5em;
+    width: .7em;
     height: 12em;
     position: relative;
     bottom:1em;
+    border-bottom-left-radius: .2em;
+    border-bottom-right-radius: .2em;
 }
 
 /* CREDIT */
@@ -518,12 +535,172 @@ button
 {
     background: #fed772;
     color: white;
+    position: relative;
     border-radius: 1em;
     padding: 1em;
     
 }
+
+/* image de credito */
+
 .img-person-c
 {
-    width: 10em;
-    padding-top: 1.5em;
+    width: 113%;
+    position: absolute;
+    bottom: -.2em;
+    left: -.5em;
+}
+
+/* portal */
+
+.container-payportal
+{
+    background: white;
+    color:#32335a;
+    padding: 1em;
+}
+
+/* titulo */
+.t-pp
+{
+    font-weight: 700;
+    font-size: 1.2em;
+    padding-top: 1.4em;
+    padding-bottom: 1em;
+}
+
+/* carta de payportar */
+.cart-pp
+{
+    background: #6f52ed;
+    display: block;
+    width: 5em;
+    color: #f5ebff;
+    width: auto;
+    padding: 1.5em;
+    border-radius: 1em;
+    display: grid;
+    position: relative;
+}
+
+.cart-pp p
+{
+    color: #bda7fe;
+    font-size: .7em;
+}
+
+.cart-pp h3
+{
+    font-size: 1em;
+}
+
+/* imagen de carta  */
+.pig
+{
+    width: 4em;
+    position: absolute;
+    right: 1.5em;
+    align-self: center;
+}
+
+/* transacciones */
+.transac
+{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3em;
+    padding-bottom: .3em;
+    align-items: center;
+}
+
+.t-trans
+{
+    font-size: 1.2em;
+}
+
+.img-visa img
+{
+    width: 2.3em;
+    position: relative;
+}
+
+hr
+{
+    border: 1px solid #e9ebef;
+    margin-bottom: 1.3em;
+}
+
+.b-add
+{
+    background: transparent;
+    border: none;
+    font-size: 1.5em;
+    color: #434662;
+}
+
+.container-pt
+{
+    display: grid;
+    grid-template-columns: 3em auto min-content;
+    grid-gap: 1em;
+    height: 4em;
+    align-items: center;
+}
+
+.container-pt h2
+{
+    font-size: .75em;
+}
+
+.container-pt p
+{
+    font-size: .65em;
+    color:#c2c3cc;
+    padding-top: .5em;
+}
+
+ol li
+{
+    padding: .8em;
+}
+
+.p-pt
+{
+    width: 100%;
+    border-radius: .5em;
+    border: 1px solid black;
+}
+
+.t-total
+{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+}
+
+.t-total .moneda
+{
+    font-size: 1.4em;
+    align-items: center;
+}
+
+.b-newtransaction
+{
+    border: none;
+    background: #ffd974;
+    color: #39313a;
+    font-weight: 700;
+    padding: 1em;
+    width: 85%;
+    border-radius: .5em ;
+    font-family: inherit;
+
+
+}
+
+.b-new
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5em;
 }
