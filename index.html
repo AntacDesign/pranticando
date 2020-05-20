@@ -9,7 +9,7 @@
     <title>Document</title>
 </head>
 <body class="container">
-    <header class="header item">
+    <header id="header" class="header item">
         <picture class="perfil-h ih">
             <img src="./imagenes/perfil.jpg" alt="foto_perfil">
             <h2 class="nom-perfil">Gerald Wolfe</h2>
@@ -48,9 +48,9 @@
             <img src="./iconos/cerrar-sesion.png" alt="salir" class="b-icon b-salir">
         </button>
     </header>
-    <section class="container-main item">
+    <section id="main" class="container-main item">
         <section class="barra i-main">
-            <button class="b-barra">
+            <button  onclick="burger()" class="b-barra">
                 <img src="./iconos/menu.svg" alt="boton-b" class="nav-burger">
             </button>
             <label class="bar-busqueda">
@@ -189,5 +189,23 @@
             </div>
         </section>
     </section>
+    <script>
+
+        function des(){
+            document.getElementById("header").classList.toggle("des");
+            
+        }
+        function bur(){
+            document.getElementById("main").classList.toggle("burger");
+            
+        }
+        function burger(){
+            des();
+            bur();
+        }
+        /* document.getElementById("b-salir-h").onclick = function(){
+            barra();
+        } */
+    </script>
 </body>
 </html>
