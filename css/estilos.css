@@ -720,3 +720,15 @@ ol li
         grid-template: minmax(100vh,900px) /6.7em minmax(870px,auto) 17em ;
     }
 }
+
+@media screen and (max-width:780px)
+{
+    body 
+    {
+        font-size: 16px;
+    }
+    .container
+    {
+        grid-template: minmax(80vh,900px) /6.7em auto 17em ;
+    }
+}
