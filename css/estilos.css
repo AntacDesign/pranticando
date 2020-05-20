@@ -723,10 +723,13 @@ ol li
 
 @media screen and (max-width:780px)
 {
+<<<<<<< HEAD
     body 
     {
         font-size: 16px;
     }
+=======
+>>>>>>> 62157c641773ee84faf703d716ec54655822661b
     .container
     {
         grid-template: minmax(80vh,900px) /6.7em auto 17em ;
