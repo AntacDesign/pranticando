@@ -93,14 +93,14 @@
                     <p class="moneda" id="balance">7 300</p>
                 </div>
                 <div class="grafica-balance i-b">
-                    <div class="botones-balance">
-                        <button class="b-day">
+                    <div id="botones-balance" class="botones-balance">
+                        <button class="btn activo">
                             Day
                         </button>
-                        <button class="b-week">
+                        <button class="btn">
                             Week
                         </button>
-                        <button class="b-month">
+                        <button class="btn">
                             Month
                         </button>
                     </div>
@@ -190,7 +190,7 @@
         </section>
     </section>
     <script>
-
+/*         barra de navegacion */
         function des(){
             document.getElementById("header").classList.toggle("des");
             
@@ -203,9 +203,32 @@
             des();
             bur();
         }
-        /* document.getElementById("b-salir-h").onclick = function(){
-            barra();
-        } */
+        
+/*         botono interactivos grafica */
+        var btnContainer = document.getElementById("botones-balance");
+        var btns = btnContainer.getElementsByClassName("btn");
+
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function() {
+            var current = document.getElementsByClassName("activo");
+            current[0].className = current[0].className.replace(" activo", "");
+         this.className += " activo";
+        });
+        }
+
+/*         media query con javascript */
+        function myFunction(x) {
+        if (x.matches) { // If media query matches
+            burger();
+        } else {
+            document.getElementById("main").classList.remove("burger");
+            document.getElementById("header").classList.remove("des");
+        }
+        }
+
+        var x = window.matchMedia("(max-width: 780px)")
+        myFunction(x) // Call listener function at run time
+        x.addListener(myFunction) 
     </script>
 </body>
 </html>

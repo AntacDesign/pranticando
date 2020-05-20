@@ -401,18 +401,8 @@ button
 
 /* botones de  day, week y month */
 
-.b-day
-{
-    color: white;
-    background: #4c3b97;
-    padding: .3em;
-    width: 5em;
-    border: none;
-    border-radius: .3em;
-    margin-right: .5em;
-}
 
-.b-week,.b-month
+.btn
 {
     color: #b1b3be;
     padding: .3em;
@@ -420,6 +410,12 @@ button
     border: none;
     border-radius: .3em;
     margin-right: .5em;
+}
+
+.activo
+{
+    color: white;
+    background: #4c3b97;
 }
 
 /* GRAFICA DE BARRAS */
