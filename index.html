@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/estilos.css">
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <title>Payment</title>
 </head>
+
 <body class="container">
     <header id="header" class="header item">
         <picture class="perfil-h ih">
@@ -18,27 +21,27 @@
         <nav class="ih">
             <ul class="barra-h">
                 <li class="i-bh">
-                    <a href="">
+                    <a href="#">
                         <img src="./iconos/usuario.png" alt="usuario" class="b-icon">
                     </a>
                 </li>
                 <li class="i-bh">
-                    <a href="">
+                    <a href="#">
                         <img src="./iconos/caja-de-herramientas.svg" alt="herramienta" class="b-icon">
                     </a>
                 </li>
                 <li class="i-bh">
-                    <a href="">
+                    <a href="#">
                         <img src="./iconos/proteger.png" alt="seguridad" class="b-icon">
                     </a>
                 </li>
                 <li class="i-bh">
-                    <a href="">
+                    <a href="#">
                         <img src="./iconos/analitica.png" alt="grafico" class="b-icon">
                     </a>
                 </li>
                 <li class="i-bh">
-                    <a href="">
+                    <a href="#">
                         <img src="./iconos/preferencia.png" alt="cofiguracion" class="b-icon">
                     </a>
                 </li>
@@ -50,7 +53,7 @@
     </header>
     <section id="main" class="container-main item">
         <section class="barra i-main">
-            <button  onclick="burger()" class="b-barra">
+            <button onclick="burger()" class="b-barra">
                 <img src="./iconos/menu.svg" alt="boton-b" class="nav-burger">
             </button>
             <label class="bar-busqueda">
@@ -80,50 +83,51 @@
                 <div class="pize-ho3"></div>
             </div>
         </section>
-        <section class="balance i-main">
-            <div class="titulo-grafica">
-                <div class="titulo-balance i-b">
-                    <h2 class="balance-h2"><strong>Card</strong> Balance</h2>
-                    <button class="b-wallet">
-                        <img src="./iconos/filled.svg" alt="wallet"
-                        class="img-wallet">
-                    </button>
-                </div>
-                <div class="balance-p">
-                    <p class="moneda" id="balance">7 300</p>
-                </div>
-                <div class="grafica-balance i-b">
-                    <div id="botones-balance" class="botones-balance">
-                        <button class="btn activo">
-                            Day
-                        </button>
-                        <button class="btn">
-                            Week
-                        </button>
-                        <button class="btn">
-                            Month
+        <section class="balance-container i-main">
+            <div class="balance">
+                <div class="titulo-grafica">
+                    <div class="titulo-balance i-b">
+                        <h2 class="balance-h2"><strong>Card</strong> Balance</h2>
+                        <button class="b-wallet">
+                            <img src="./iconos/filled.svg" alt="wallet" class="img-wallet">
                         </button>
                     </div>
-                    <div class="barras-dias">
-                        <p class="mon">Mon</p>
-                        <p class="tue">Tue</p>
-                        <p class="wed">Wed</p>
-                        <p class="thu">Thu</p>
-                        <p class="fri">Fri</p>
-                        <p class="sat">Sat</p>
-                        <p class="sun">Sun</p>
+                    <div class="balance-p">
+                        <p class="moneda" id="balance">7 300</p>
+                    </div>
+                    <div class="grafica-balance i-b">
+                        <div id="botones-balance" class="botones-balance">
+                            <button class="btn activo">
+                                Day
+                            </button>
+                            <button class="btn">
+                                Week
+                            </button>
+                            <button class="btn">
+                                Month
+                            </button>
+                        </div>
+                        <div class="barras-dias">
+                            <p class="mon">Mon</p>
+                            <p class="tue">Tue</p>
+                            <p class="wed">Wed</p>
+                            <p class="thu">Thu</p>
+                            <p class="fri">Fri</p>
+                            <p class="sat">Sat</p>
+                            <p class="sun">Sun</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="credit">
-                <h2>Credit</h2>
-                <p class="p-credit">Trafing has always</p>
-                <!-- <picture class="grafica-c">
+                <div class="credit">
+                    <h2>Credit</h2>
+                    <p class="p-credit">Trafing has always</p>
+                    <!-- <picture class="grafica-c">
                     <img src="" alt="grafica-c" class="img-grafica-c">
                 </picture> -->
-                <picture class="person-c">
-                    <img src="./imagenes/person.png" alt="person-c"class="img-person-c">
-                </picture>
+                    <picture class="person-c">
+                        <img src="./imagenes/person.png" alt="person-c" class="img-person-c">
+                    </picture>
+                </div>
             </div>
         </section>
     </section>
@@ -136,94 +140,97 @@
                     <p>Last updated at</p>
                     <p>11:31am 30 Aug 2019</p>
                 </div>
-                <img src="./imagenes/pig.png" alt="pig"
-                class="pig">
+                <img src="./imagenes/pig.png" alt="pig" class="pig">
             </picture>
         </section>
         <section class="transaction item">
-            <div class="transac">
-                <h2 class="t-trans">Transaction</h2>
-                <picture class="img-visa">
-                    <img src="./iconos/visa.svg" alt="visa">
-                </picture>
+            <div>
+                <div class="transac">
+                    <h2 class="t-trans">Transaction</h2>
+                    <picture class="img-visa">
+                        <img src="./iconos/visa.svg" alt="visa">
+                    </picture>
+                </div>
+                <hr>
+                <ol>
+                    <li class="container-pt">
+                        <img src="./imagenes/perfil.jpg" class="p-pt" alt="perfil-t">
+                        <div>
+                            <h2>Connor Nguyen</h2>
+                            <p class="moneda">1000</p>
+                        </div>
+                        <button class="b-add">
+                            +
+                        </button>
+                    </li>
+                    <li class="container-pt">
+                        <img src="./imagenes/perfil.jpg" class="p-pt" alt="perfil-t">
+                        <div>
+                            <h2>Corey Smith</h2>
+                            <p class="moneda">350</p>
+                        </div>
+                        <button class="b-add">
+                            +
+                        </button>
+                    </li>
+                    <li class="container-pt">
+                        <img src="./imagenes/perfil.jpg" class="p-pt" alt="perfil-t">
+                        <div>
+                            <h2>Stephen Little</h2>
+                            <p class="moneda">12 000</p>
+                        </div>
+                        <button class="b-add">
+                            +
+                        </button>
+                    </li>
+                </ol>
             </div>
-            <hr>
-            <ol>
-                <li class="container-pt">
-                    <img src="./imagenes/perfil.jpg" class="p-pt" alt="perfil-t">
-                    <div>
-                        <h2>Connor Nguyen</h2>
-                        <p class="moneda">1000</p>
-                    </div>
-                    <button class="b-add">
-                        +
+            <div>
+                <hr>
+                <p class="t-total">Total: <span class="moneda">12 450</span></p>
+                <div class="b-new">
+                    <button class="b-newtransaction">
+                        New Transaction
                     </button>
-                </li>
-                <li class="container-pt">
-                    <img src="./imagenes/perfil.jpg" class="p-pt" alt="perfil-t">
-                    <div>
-                        <h2>Corey Smith</h2>
-                        <p class="moneda">350</p>
-                    </div>
-                    <button class="b-add">
-                        +
-                    </button>
-                </li>
-                <li class="container-pt">
-                    <img src="./imagenes/perfil.jpg" class="p-pt" alt="perfil-t">
-                    <div>
-                        <h2>Stephen Little</h2>
-                        <p class="moneda">12 000</p>
-                    </div>
-                    <button class="b-add">
-                        +
-                    </button>
-                </li>
-            </ol>
-            <hr>
-            <p class="t-total">Total: <span class="moneda">12 450</span></p>
-            <div class="b-new">
-                <button class="b-newtransaction">
-                    New Transaction
-                </button>
+                </div>
             </div>
         </section>
     </section>
     <script>
-/*         barra de navegacion */
-        function des(){
+        /*         barra de navegacion */
+        function des() {
             document.getElementById("header").classList.toggle("des");
-            
+
         }
-        function bur(){
+        function bur() {
             document.getElementById("main").classList.toggle("burger");
-            
+
         }
-        function burger(){
+        function burger() {
             des();
             bur();
         }
-        
-/*         botono interactivos grafica */
+
+        /*         botono interactivos grafica */
         var btnContainer = document.getElementById("botones-balance");
         var btns = btnContainer.getElementsByClassName("btn");
 
         for (var i = 0; i < btns.length; i++) {
-            btns[i].addEventListener("click", function() {
-            var current = document.getElementsByClassName("activo");
-            current[0].className = current[0].className.replace(" activo", "");
-         this.className += " activo";
-        });
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("activo");
+                current[0].className = current[0].className.replace(" activo", "");
+                this.className += " activo";
+            });
         }
 
-/*         media query con javascript */
+        /*         media query con javascript */
         function myFunction(x) {
-        if (x.matches) { // If media query matches
-            burger();
-        } else {
-            document.getElementById("main").classList.remove("burger");
-            document.getElementById("header").classList.remove("des");
-        }
+            if (x.matches) { // If media query matches
+                burger();
+            } else {
+                document.getElementById("main").classList.remove("burger");
+                document.getElementById("header").classList.remove("des");
+            }
         }
 
         var x = window.matchMedia("(max-width: 780px)")
@@ -231,4 +238,5 @@
         x.addListener(myFunction) 
     </script>
 </body>
+
 </html>
